@@ -1,0 +1,81 @@
+body {
+background-color: black;
+}
+img {
+    width: 175px;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+li {
+    float: left;
+    list-style: none;
+    padding: 15px;
+}
+nav{
+    float: right;
+    margin-top: 30px;
+    margin-right: 150px;
+}
+a{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+a:hover {
+    background: teal;
+}
+.contenedor {
+    width: 250px;
+    margin: 100px;
+    text-align: center;
+    padding-top: 50px;
+    right: 1000px;
+    position: absolute;
+    top: 140px;
+    background-color: black;
+}
+h1 {
+    color: white;
+}
+p{
+    color: white;
+}
+.interior{
+position: absolute;
+width: 400px;
+height: 350px;
+right: 300px;
+}
+.contenedor2{
+    width: 250px;
+    margin: 100px;
+    text-align: center;
+    padding-top: 50px;
+    right: 210px;
+    margin-top: 360px;
+    position: absolute;
+    top: 130px;
+    background-color: black;
+    
+}
+
+.titulo2{
+    height: 20px;
+    color: white;
+    margin-right: -10px;
+    margin-top: -35px;
+}
+.parrafo2{
+    margin-top: -10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+.imagen2{
+width: 50px;
+height: 50px;
+border-radius: 50px;
+margin-left: -120px;
+margin-top: -50px;
+position: absolute;
+}
