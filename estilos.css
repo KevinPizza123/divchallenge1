@@ -1,106 +1,300 @@
 
-body {
-background-color: black;
-}
-
-    
-
-img {
-    width: 175px;
-    margin-top: 30px;
-    margin-left: 25px;
-}
-li {
-    float: left;
+*{
+    margin:0;
+    text-decoration: none;
     list-style: none;
-    padding: 15px;
+}
+body{
+    color: white;
+    font-family: Montserrat;
+    background-color: #181719;
+    display: flex;
+    flex-direction: column;
+    margin: 4% 6% 0;
 }
 
 nav{
+    height: 80px;
+    width: 100%;
+}
+
+nav .h3{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    padding: 0 100px;
+    line-height: 80px;
+}
+
+nav ul{
     float: right;
-    margin-top: 30px;
-    margin-right: 150px;
+    margin-right: 40px;
 }
 
-a{
-    text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-}
-a:hover {
-    background: teal;
-}
-.contenedor {
-    width: 250px;
-    margin: 100px;
-    text-align: center;
-    padding-top: 50px;
-    right: 1000px;
-    position: absolute;
-    top: 140px;
-    background-color: black;
-}
-.contenedor:hover{
-    transform: scale(1.25);
-    opacity: 1;
-}
-h1 {
-    color: white;
-}
-p{
-    color: white;
-}
-.interior{
-position: absolute;
-width: 400px;
-height: 350px;
-right: 300px;
-}
-.interior:hover{
-    
-transform: scale(1.25);
-opacity: 1;
-    
-}
-.interior:hover {
-    background: blue;
-}
-.contenedor2{
-    width: 250px;
-    margin: 100px;
-    text-align: center;
-    padding-top: 50px;
-    right: 210px;
-    margin-top: 360px;
-    position: absolute;
-    top: 130px;
-    background-color: black;
-    
-}
-.contenedor2:hover{
-    transform: scale(1.25);
-    opacity: 1;
-}
-.titulo2{
-    height: 20px;
-    color: white;
-    margin-right: -10px;
-    margin-top: -35px;
-}
-.parrafo2{
-    margin-top: -10px;
-    padding: 10px;
-    text-align: center;
-    font-size: 15px;
-}
-.imagen2{
-width: 50px;
-height: 50px;
-border-radius: 50px;
-margin-left: -120px;
-margin-top: -50px;
-position: absolute;
+nav li {
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
 }
 
+nav a{
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.menu{
+    background-color: white;
+    font-size: 50px;
+    line-height: 10px;
+    float: right;
+    margin-right: 40px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 1048){
+    nav ul{
+        margin-right:20px 
+    }
+    nav a{
+        font-size: 17px;
+    }
+}
+@media (max-width: 909px){
+    .menu{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+}
 
- 
+footer{
+    padding: 2% 4%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #A9A9A9;
+    align-self: center;
+    font-family: Montserrat-R;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    margin: 13% 0 0;
+}
+
+    .texto{
+        flex:1;
+        padding: 10% 8% 10% 0;
+    }
+
+    .texto h1{
+        font-family: Lora;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 61px;
+    }
+
+    .texto p{
+        margin: 10% 0;
+        font-size: 22px;
+        line-height: 29px;
+    }
+
+    .read{
+        display: flex;
+        align-items: center;
+    }
+
+    .read{
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        margin-right: 3%;
+    }
+
+    .imagenes{
+        width: 60%;
+    }
+    .imagenes img{
+        width: 100%;
+    }
+
+    .perfil{
+        width: 35%;
+        padding: 3% 15% 4% 5% ;
+        background-color:#181719 ;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-weight: 500;
+        transform: translate(73%,-45%);
+    }
+    .perfil:hover {
+        background: blue;
+        transform: scale(1.25);
+    }
+
+    .perfil-cara{
+        display: flex;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .perfil-cara img{
+        width: 20%;
+        border-radius: 100%;
+        margin-right: 5%;
+    }
+    
+    .perfil h4, h5{
+        margin-top: 5%;
+    }
+
+    .perfil-cara h5{
+        color: #828282;
+    }
+
+    .perfil p{
+        margin-top: 5%;
+        font-family: Lora;
+        font-size: 22px;
+        line-height: 31px;
+    }
+
+@media screen and (max-width:1300px) {
+    body{
+        margin-top: 2%;
+    }
+    .main{
+        margin-top: 7%;
+    }
+    .texto{
+        padding: 5% 15% 5% 0;
+    }
+    .texto h1{
+        font-size: 44px;
+    }
+    .texto p{
+        font-size: 20px;
+    }
+    .read h6{
+        font-size: 14px;
+    }
+    .imagenes{
+        width: 50%;
+    }
+    .perfil{
+        padding: 2% 12% 2% 3% ;
+        transform: translate(90%,-60%);
+    }
+    .perfil-cara{
+        font-size: 10px;
+        line-height: 10px;
+    }
+    .perfil-cara img{
+        width: 15%;
+        height: 15%;
+    }
+    .perfil p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+@media screen and (max-width:1000px){
+    .texto h1{
+        font-size: 36px;
+    }
+    .texto p{
+        font-size: 16px;
+    }
+    .read h6{
+        font-size: 10px;
+    }
+    .perfil-cara{
+        font-size: 8px;
+        line-height: 8px;
+    }
+    .perfil p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:850px){
+    nav li{
+        font-size: 12px;
+    }
+    body{
+        margin: 5% 8%;
+    }
+    .main{
+        flex-direction: column;
+        margin: 10% 0;
+    }
+    .texto h1{
+        font-size: 46px;
+    }
+    .texto p{
+        margin: 8% 0 3%;
+        font-size: 18px;
+    }
+    .imagenes{
+        width: 100%;
+    }
+    .perfil-cara{
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .perfil p{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .texto p{
+        margin:10% 0;
+    }
+    .perfil{
+        width: 70%;
+        transform: translate(8%, -20%);
+    }
+}
+
+@media screen and (max-width:450px) {
+    body{
+        margin: 6% 4%;
+    }
+    nav h1{
+        font-size: 12px;
+    }
+    .texto h1{
+        font-size: 36px;
+    }
+    .texto p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .perfil{
+        width: 70%;
+        transform: translate(8%, -45%);
+    }
+    .perfil p{
+        width: 80%;
+    }
+    footer{
+        font-size: 12px;
+    }
+}
